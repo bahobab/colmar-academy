@@ -1,0 +1,122 @@
+/*header*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c1c1c1;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
+/*banner section*/
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.banner .banner-img {
+  width: 60%;
+}
+.banner-img img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*main section*/
+.main {
+  display: flex;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.main .main-section-img {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .main-section-img img {
+  width: 100%;
+  height: auto;
+}
+
+.main .main-section-articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    background-color: lime;
+}
+
+/*learning */
+.learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learning .learning-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.learning .learning-articles section {
+  /*flex: 50%;*/
+  align-self:auto;
+}
+
+.learning-engineering img {
+  /*width: 100%;
+  height: auto;*/
+}
+
+/*thesis*/
+.thesis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thesis-content {
+  display: flex;
+  justify-content: center;
+}
+
+.thesis-video {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.thesis-video video {
+  width: 70%;
+}
+
+.thesis-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c1c1c1;
+}
