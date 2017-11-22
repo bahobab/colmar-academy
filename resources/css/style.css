@@ -3,16 +3,30 @@ nav {
   display: flex;
   justify-content: space-between;
   background-color: #c1c1c1;
+  height: 64px;
 }
 
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*height: 32px;*/
+  margin-left: 24px;
+}
+.logo p, .logo img {
+  height: 32px;
+}
 .menu {
   display: flex;
   justify-content: center;
+  margin-right: 24px;
 }
 
 .menu li {
   list-style: none;
+  margin-left: 16px;
 }
+
 
 /*banner section*/
 
@@ -60,6 +74,23 @@ nav {
     justify-content: center;
     /*align-items: center;*/
     background-color: lime;
+    width: 40%
+}
+
+.main-section-article {
+  display: flex;
+  /*flex-direction: column;*/
+  flex: 1 65%;
+}
+
+.main-section-article div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section-article img {
+  width: 35%;
+  height: auto;
 }
 
 /*learning */
@@ -75,16 +106,33 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  /*flex: 1;*/
+  border: 1px solid green;
+  background-color: #c1c1c1;
 }
 
-.learning .learning-articles section {
-  /*flex: 50%;*/
-  align-self:auto;
+.learning-articles .learning-section {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  border: 1px solid blue;*/
+  flex: 1 500px;
+  border: 1px solid blue;
+  background-color: #fff;
 }
 
-.learning-engineering img {
-  /*width: 100%;
-  height: auto;*/
+.learning-section img,
+.learning-section h4,
+.learning-section p {
+  /*flex: 1;
+  align-self: center;
+  border: 1px solid red;*/
+}
+
+.learning-section img {
+  width: 100%;
+  height: auto;
 }
 
 /*thesis*/
