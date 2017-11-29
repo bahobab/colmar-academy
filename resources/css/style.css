@@ -1,8 +1,28 @@
-/*header*/
+/*global settings*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    /*font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+h2 {
+  font-size: 22px;
+}
+a {
+  text-decoration: none;
+}
+
+/*header section*/
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: #c1c1c1;
   height: 64px;
 }
 
@@ -10,21 +30,41 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*height: 32px;*/
   margin-left: 24px;
+  /*height: 32px;*/
+  /*padding-top: 20px;*/
 }
-.logo p, .logo img {
-  height: 32px;
+
+#colmar {
+  font-weight: 600;
+  font-size: 18px;
 }
+
+#academy {
+  color: #777;
+  font-weight: 300;
+}
+
+.logo p {
+  padding-top: 2px;
+  text-transform: uppercase;
+}
+
 .menu {
   display: flex;
   justify-content: center;
   margin-right: 24px;
+  margin-top: 18px;
 }
 
 .menu li {
   list-style: none;
   margin-left: 16px;
+}
+
+.menu li a {
+  font-size: 14px;
+  text-decoration: none;
 }
 
 
@@ -33,11 +73,14 @@ nav {
 .banner {
   display: flex;
   justify-content: space-around;
+  background-color: #c1c1c1;
 }
 
 .banner .banner-img {
   width: 60%;
+  margin: 32px 24px;
 }
+
 .banner-img img {
   width: 100%;
   height: auto;
@@ -46,21 +89,61 @@ nav {
 .banner .banner-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 40%;
+  padding: 0 24px;
 }
+
+.banner .banner-text h1 {
+  font-size: 26px;
+}
+
+.banner .banner-text p,
+.banner-text a {
+  margin-top: 24px;
+}
+
+.banner-text a {
+  cursor: pointer;
+  font-size: 17px;
+  padding: 8px 0px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: #555;
+  width: 80%;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c1c1c1;
+  }
+
+  .banner .banner-img {
+    width: 100%;
+  }
+
+  .banner .banner-text {
+    width: 100%;
+  }
+} /* end media query */
 
 /*main section*/
 .main {
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
 }
 
 .main .main-section-img {
   width: 60%;
   display: flex;
   flex-direction: column;
+  margin: 32px 24px;
 }
 
 .main .main-section-img img {
@@ -68,29 +151,132 @@ nav {
   height: auto;
 }
 
+.main-section-img .practice-heading {
+  margin-top: 32px;
+}
+
+.main-section-img .practice-text {
+  margin-top: 24px;
+  font-size: 11px;
+}
+
+.main-section-img .quote {
+  margin-top: 32px;
+  font-size: 10px;
+}
+
 .main .main-section-articles {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /*align-items: center;*/
-    background-color: lime;
-    width: 40%
+    justify-content: flex-start;
+    width: 40%;
+    margin-top: 32px;
 }
 
 .main-section-article {
   display: flex;
-  /*flex-direction: column;*/
-  flex: 1 65%;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.main-section-article div {
+.main-section-article-text {
+  padding-right: 16px;
+}
+
+.main-section-article.campus,
+.main-section-article.guest {
+  padding: 16px 0;
+}
+
+#orientation-img {
+  /*background-image: url("../images/information-orientation.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  /*background-color: red;
+  border: 1px solid black;
+  width: 100%;
+  height: auto;*/
+}
+
+.main-section-article.guest {
+  background-color: #c1c1c1;
+}
+
+.main-section-article div{
   display: flex;
   flex-direction: column;
+  width: 65%;
 }
 
-.main-section-article img {
+.content-text {
+  font-size: 11PX;
+  margin-top: 8px;
+}
+
+.main-section-article h3 {
+  font-size: 16px;
+}
+
+.main-section-article .img {
   width: 35%;
+}
+
+.main-section-article .img img {
+  width: 100%;
   height: auto;
+  padding: 0 16px;
+}
+
+.main-section-article .guest {
+  background-color: #c1c1c1;
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main .main-section-img {
+    /*width: 60%;*/
+    display: none;
+    /*flex-direction: column;
+    margin: 32px 24px;*/
+  }
+
+  .main .main-section-articles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 32px;
+      border: 1px solid red;
+  }
+
+  .main-section-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    width: 100%;
+  }
+
+  .main-section-article .img {
+    width: 100%;
+  }
+
+  .main-section-article div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
 }
 
 /*learning */
@@ -99,40 +285,72 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #c1c1c1;
+}
+
+.learning header {
+  margin-top: 32px;
 }
 
 .learning .learning-articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  /*flex: 1;*/
-  border: 1px solid green;
-  background-color: #c1c1c1;
+  align-content: space-around;
+  margin: 32px 72px;
 }
 
 .learning-articles .learning-section {
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex: 1;
-  border: 1px solid blue;*/
-  flex: 1 500px;
-  border: 1px solid blue;
+  flex: 1 250px;
   background-color: #fff;
+  margin: 16px;
 }
 
-.learning-section img,
-.learning-section h4,
-.learning-section p {
-  /*flex: 1;
-  align-self: center;
-  border: 1px solid red;*/
+.learning-section div {
+  padding: 16px 0 24px 16px;
 }
 
 .learning-section img {
   width: 100%;
   height: auto;
+}
+
+.learning-section .courses {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.learning-section .description {
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .learning .learning-articles {
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    justify-content:center;
+    align-items: flex-start;
+    width: 100%;
+    /*margin: 32px 72px;*/
+    border: 1px solid green;
+    background-color: #fff;
+  }
+
+  .learning-articles .learning-section {
+    border: 1px solid yellow;
+    align-self: stretch;
+    flex: auto;
+    background-color: #c1c1c1;
+  }
+
+  .learning-section img,
+  .learning-section p
+  {
+    display: none;
+  }
+
 }
 
 /*thesis*/
@@ -143,28 +361,89 @@ nav {
   align-items: center;
 }
 
+.thesis header {
+  margin-top: 32px;
+}
+
 .thesis-content {
   display: flex;
   justify-content: center;
+  margin-top: 32px;
 }
 
 .thesis-video {
   display: flex;
   flex-direction: column;
   width: 60%;
+  padding: 0 24px 24px 24px;
 }
 
 .thesis-video video {
-  width: 70%;
+  width: 100%;
 }
+
+ .thesis .reimagine-heading {
+   margin-top: 24px;
+ }
+
+ .thesis .reimagine-text {
+   margin-top: 8px;
+   padding-bottom: 32px;
+ }
 
 .thesis-aside {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
-footer {
+.thesis-aside .aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thesis-aside .aside.fisma {
+  background-color: #c1c1c1;
+}
+
+.aside .thesis-aside-img {
+  width: 35%;
+  padding: 16px;
+}
+
+.aside .thesis-aside-img img {
+  width: 100%;
+  height: auto;
+}
+
+.aside .thesis-aside-text {
+  width: 65%;
+  padding-right: 16px;
+}
+
+@media only screen and (max-width:800px) {
+  .thesis-video {
+    /*display: flex;
+    flex-direction: column;*/
+    width: 100%;
+    /*padding: 0 24px 24px 24px;*/
+  }
+
+  .thesis .reimagine {
+    display: none;
+  }
+  .thesis-aside {
+    display: none;
+    flex-direction: column;
+    width: 40%;
+  }
+}
+
+/*footer section*/
+footer div{
   display: flex;
   justify-content: space-between;
   background-color: #c1c1c1;
+  padding: 16px 24px;
 }
