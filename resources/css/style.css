@@ -64,16 +64,19 @@ nav li {
   margin-left: 16px;
 }
 
-nav li a {
+nav li a,
+.mobile-nav a
+ {
   font-size: 14px;
   text-decoration: none;
   color: #000;
-  transition: color .25s;
+  /*transition: color .25s;*/
 }
 
-nav li a:hover {
+nav li a:hover,
+.mobile-nav a:hover {
  opacity: 0.5;
- color: deepskyblue;
+ /*color: deepskyblue;*/
  animation: 0.5s navblink 0.25s forwards
 }
 
@@ -98,6 +101,12 @@ nav li a:hover {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+  }
+
+  nav.mobile-nav img {
+    margin-top: 10px;
+    width: 35px;
+    height: auto;
   }
 }
 
@@ -441,6 +450,14 @@ nav li a:hover {
   .learning-section p
   {
     display: none;
+  }
+
+  .learning-section h4 {
+    transition: color 250ms;
+  }
+
+  .learning-section h4:hover {
+    color: deepskyblue;
   }
 
 }
