@@ -4,21 +4,27 @@
     <meta name="twitter:" content="">
     <title>Colmar Academy</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:200,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./resources/css/style.css">
   </head>
   <body>
     <header>
-      <nav>
-        <div class="logo">
-          <img src="./resources/images/ic-logo.svg" alt="">
-          <p class="school"><span id="colmar">colmar</span><span id="academy">academy</span></p>
-        </div>
-        <ul class="menu">
-          <li class="menu-item"><a href="#">On campus</a></li>
-          <li class="menu-item"><a href="#">On line</a></li>
-          <li class="menu-item"><a href="#">For companies</a></li>
-          <li class="menu-item"><a href="#">Sign in</a></li>
-        </ul>
+      <div class="logo">
+        <img src="./resources/images/ic-logo.svg" alt="">
+        <p class="school"><span id="colmar">colmar</span><span id="academy">academy</span></p>
+      </div>
+      <nav class="mobile-nav">
+        <img src="./resources/images/ic-logo.svg" alt="">
+        <img src="./resources/images/school-desk-and-chair-icon.png" alt="">
+        <!-- <li class="menu-icon"><a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a></li> -->
+        <li class="menu-icon"><a href="#"><i class="fa fa-television fa-2x"></i></a></li>
+        <li class="menu-icon"><a href="#"><i class="fa fa-user-circle fa-2x"></i></a></li>
+      </nav>
+      <nav class="menu">
+        <li class="menu-item"><a href="#">On campus</a></li>
+        <li class="menu-item"><a href="#">On line</a></li>
+        <li class="menu-item"><a href="#">For companies</a></li>
+        <li class="menu-item"><a href="#">Sign in</a></li>
       </nav>
     </header>
     <!-- end of header -->
@@ -46,8 +52,8 @@
       </section>
       <section class="main-section-articles">
         <article class="main-section-article orientation">
-          <div class="img" id="orientation-img">
-            <img src="./resources/images/information-orientation.jpg" alt="">
+          <div class="img orientation-img">
+            <!-- <img src="./resources/images/information-orientation.jpg" alt=""> -->
           </div>
           <div class="main-section-article-text">
             <h3>Orientation date</h3>
@@ -57,7 +63,7 @@
         </article>
         <article class="main-section-article campus">
           <div class="img campus-img">
-            <img src="./resources/images/information-campus.jpg" alt="">
+            <!-- <img src="./resources/images/information-campus.jpg" alt=""> -->
           </div>
           <div class="main-section-article-text">
             <h3>Our campus</h3>
@@ -67,7 +73,7 @@
         </article>
         <article class="main-section-article guest">
           <div class="img guest-img">
-            <img src="./resources/images/information-guest-lecture.jpg" alt="">
+            <!-- <img src="./resources/images/information-guest-lecture.jpg" alt=""> -->
           </div>
           <div class="main-section-article-text">
             <h3>Our guest lecture</h3>
@@ -173,8 +179,8 @@
     </article>
     <footer>
       <div class="content-text">
-        <p>&copy;2017 - Colmar Academy - All rights reserved</p>
-        <p>Terms and Privacy</p>
+        <p class="copyrights">&copy;2017 - Colmar Academy - All rights reserved</p>
+        <p class="terms-privacy">Terms and Privacy</p>
       </div>
     </footer>
   </body>
